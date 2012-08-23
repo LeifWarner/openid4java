@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.openid4java</groupId>
   <artifactId>openid4java-parent</artifactId>
-  <version>0.9.7-SNAPSHOT</version>
+  <version>0.9.7.0</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -252,6 +252,7 @@
         <groupId>org.openxri</groupId>
         <artifactId>openxri-syntax</artifactId>
         <version>1.2.0</version>
+        <scope>provided</scope>
         <exclusions>
           <exclusion>
             <groupId>log4j</groupId>
@@ -263,6 +264,7 @@
         <groupId>org.openxri</groupId>
         <artifactId>openxri-client</artifactId>
         <version>1.2.0</version>
+        <scope>provided</scope>
         <exclusions>
           <exclusion>
             <groupId>log4j</groupId>
@@ -279,22 +281,19 @@
         <groupId>net.sf.ehcache</groupId>
         <artifactId>ehcache</artifactId>
         <version>1.3.0</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
         <version>1.2.14</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>servlet-api</artifactId>
         <version>2.3</version>
         <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>1.1.1</version>
       </dependency>
       <dependency>
         <groupId>commons-codec</groupId>
@@ -304,12 +303,13 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
-        <version>4.1</version>
+        <version>4.1.2</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-jdbc</artifactId>
         <version>2.0.6</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.nekohtml</groupId>
@@ -320,26 +320,31 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>3.8.2</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>jdom</groupId>
         <artifactId>jdom</artifactId>
         <version>1.0</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>jetty</groupId>
         <artifactId>jetty</artifactId>
         <version>${jetty.version}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>jetty</groupId>
         <artifactId>jetty-util</artifactId>
         <version>${jetty.version}</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.jwebunit</groupId>
         <artifactId>jwebunit-htmlunit-plugin</artifactId>
         <version>1.4.1</version>
+        <scope>test</scope>
         <exclusions>
           <exclusion>
             <groupId>javax.servlet</groupId>
@@ -362,6 +367,7 @@
         <groupId>xml-security</groupId>
         <artifactId>xmlsec</artifactId>
         <version>1.3.0</version>
+        <scope>provided</scope>
       </dependency>
 
       <!-- Infocard -->
@@ -369,31 +375,37 @@
         <groupId>org.apache.ws.commons.axiom</groupId>
         <artifactId>axiom-api</artifactId>
         <version>1.2.5</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.higgins</groupId>
         <artifactId>higgins-configuration-api</artifactId>
         <version>SNAPSHOT</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.higgins</groupId>
         <artifactId>higgins-sts-api</artifactId>
         <version>SNAPSHOT</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.higgins</groupId>
         <artifactId>higgins-sts-common</artifactId>
         <version>SNAPSHOT</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.higgins</groupId>
         <artifactId>higgins-sts-server-token-handler</artifactId>
         <version>SNAPSHOT</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.eclipse.higgins</groupId>
         <artifactId>higgins-sts-spi</artifactId>
         <version>SNAPSHOT</version>
+        <scope>provided</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
