@@ -243,6 +243,18 @@ public class ConsumerManager
     }
 
     /**
+     * Configures the NonceGenerator
+     *
+     * @param NonceGenerator
+     * @see NonceGenerator
+     */
+    @Inject
+    public void setConsumerNonceGenerator(NonceGenerator nonceGenerator)
+    {
+        this._consumerNonceGenerator = nonceGenerator;
+    }
+
+    /**
      * Configures the NonceVerifier that will be used to keep track of the
      * nonces in the authentication response messages.
      *
